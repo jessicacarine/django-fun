@@ -43,3 +43,4 @@ class Article(models.Model):
 
     class Meta:
         ordering = ['headline']
+        get_latest_by = 'rating'
