@@ -6,7 +6,7 @@ Article.objects.filter(reporter=5) ou (reporter__id=5)
 Article.objects.filter(pub_date__gte='2019-01-01')
 
 3ª O reporter com mais artigos em 2020:
-Article.objects.filter(pub_date__contains='2020').annotate(Count('reporter_id'))
+errada = Article.objects.filter(pub_date__contains='2020')
 
 4ª Artigos que contenham a palavra "python" e tenham sido publicadas por derteminado reporter em abril de 2015:
 Article.objects.filter(headline__contains='Segundo').filter(pub_date__year=2020)
